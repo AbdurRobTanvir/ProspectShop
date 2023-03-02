@@ -1,0 +1,428 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Header */
+.header{
+    background-image: url(image/header_bg.png);
+    background-size: 100% 100%;
+}
+.header .header-element{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header .header-logo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+.header .header-menu{
+    float: right;
+    position: relative;
+}
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 55px 0 0 0;
+    overflow: hidden;
+} 
+.header-menu  li {
+    float: left;
+}
+.header-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 23px;
+    text-decoration: none;
+}
+.header .contact{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 28px 20px 0 0;
+}
+a[href^="tel:"] {
+    color: black;
+    font-size: 29px;
+    text-decoration: none;
+}
+.header .header-menu-bar{
+    float: right;
+    display: none;
+}
+/* Header End */
+/* Form */
+.form{
+    background-image: url(image/body_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.form .left-background{
+    background-image: url(image/body_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 0;
+}
+.form .element{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.form .element .left{
+    float: left;
+    width: 60%;
+    position: relative;
+}
+.form .element .left .left-element{
+    padding: 185px 0 0 0;
+    height: 865px;
+}
+.form .left-element .title{
+    width: 75%;
+    font-size: 45px;
+    font-weight: bold;
+}
+.form .left-element .details{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.form .element .right{
+    float: right;
+    width: 40%;
+    color: white;
+    background-image: url(image/container_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 910px;
+}
+.form .right .element{
+    padding: 50px 50px 0 50px;
+}
+.form .right .element .logo img{
+    float: left;
+}
+.form .right .element .logo .name{
+    float: right;
+    font-size: 30px;
+    line-height: 75px;
+}
+.form .right .title{
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+.form .right .box{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+.form .right .guide{
+    background-color: black;
+    width: 100%;
+    height: 110px;
+    margin: 35px 0 45px 0;
+}
+.form .right .guide .text{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    width: 60%;
+    padding: 25px 0 0 30px;
+}
+.form .right .guide .logo{
+    float: right;
+    padding: 30px 50px 0 0;
+}
+.form .right .element .conclusion{
+    width: 100%;
+    text-align: center;
+}
+/* Form End */
+
+/* information */
+.information{
+    background-color: #5fa32e;
+    color: white;
+}
+.information .element{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.information .information-header{
+    padding: 40px 0 20px 0;
+}
+.information .information-header .title{
+    float: left;
+    font-size: 40px;
+}
+.information .information-header .logo{
+    float: right;
+}
+.information .information-header .logo img{
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.information .information-header .logo .text{
+    padding: 0 100px 0 15px;
+    float: right;
+    font-size: 25px;
+    line-height: 50px;
+    height: 50px;
+}
+.information .card{
+    width: 33%;  
+    float: left;
+    padding-top: 10px;
+    height: 290px;
+}
+.information .card .description-left{
+    padding-right: 75px;
+}
+.information .card .description-mid{
+    padding: 0 50px 0 37px;
+}
+.information .card .description-right{
+    padding-left: 75px;
+}
+.information .card img{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.information .card .title{
+    height: 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-top: 10px;
+}
+/* information end */
+
+/* testimonial */
+.testimonial{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.testimonial .testimonial-header{
+    padding: 30px 0 20px 0;
+}
+.testimonial .testimonial-header .title{
+    color: #5fa32e;
+    float: left;
+    font-size: 40px;
+    line-height: 60px;
+}
+.testimonial .testimonial-header .logo{
+    float: right;
+}
+.testimonial .testimonial-header .logo-alt{
+    float: right;
+    display: none;
+}
+.testimonial .card{
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 15px 0;
+}
+.testimonial .card .description-left{
+    padding-right: 95px;
+}
+.testimonial .card .description-mid{
+    padding: 0 58px;
+}
+.testimonial .card .description-right{
+    padding-left: 90px;
+}
+.testimonial .card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial .card .title{
+    padding-top: 30px;
+    font-weight: bold;
+    height: 150px;
+}
+.testimonial .card .title .company{
+    text-transform: uppercase;
+    color: #5fa32e;
+}
+.testimonial .card .title .role{
+    font-weight: normal;
+}
+.testimonial .card .details{
+    height: 190px;
+}
+.testimonial .clients-installation{
+    padding-top: 50px;
+}
+.testimonial .more-clients{
+    padding-top: 75px;
+    float: left;
+}
+.testimonial .installation{
+    float: right;
+    background-image: url(image/container_bg_alt.png);
+    background-repeat: no-repeat;
+    height: 231px;
+    width: 38%;
+}
+.testimonial .installation .details{
+    width: 330px;
+    padding: 120px 0px 0 96px;
+}
+.testimonial .installation .details .title{
+    color: white;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    width: 160px;
+}
+.testimonial .installation .details .logo{
+    float: right;
+}
+/* testimonial end */
+.footer{
+    background-image: url(image/footer.png);
+    background-size: 100% 100%;
+}
+.footer .footer-element{
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+}
+@media screen and (max-width: 576px) {
+    .header .header-logo{
+        padding: 20px 0 20px 15px;
+    }
+    .header .header-logo .logo-img{
+        width: 270px;
+    }
+    .header .header-menu{
+        display: none;
+    }
+    .header .header-menu-bar{
+        display: block;
+        padding: 20px 35px 0 0;
+    }
+    .header .header-menu-bar img{
+        height: 50px;
+        width: 50px;
+    }
+    .form{
+        background-size: 0;
+    }
+    .form .element .left{
+        float: none;
+        width: 100%;
+    }
+    .form .left-background{
+        background-size: 210% 100%;
+        background-position-x: -55px;
+    
+    }
+    .form .element .left .left-element{
+        padding: 70px 0 0 30px;
+        height: 420px;
+    }
+    .form .left-element .title{
+        width: 100%;
+        font-size: 28px;
+    }
+    .form .left-element .details{
+        font-size: 11px;
+        bottom: 15px;
+    }
+    .form .element .right{
+        float: none;
+        padding: 0;
+        width: 100%;
+        height: 800px;
+        background-size: 103% 100%;
+        background-position-x: -6px;
+    }
+    .form .element .right .element{
+        padding: 20px 40px 0 40px;
+    }
+    .form .element .right .element .logo img{
+        height: 50px;
+        width: 50px;
+        float: left;
+    }
+    .form .element .right .element .logo .name{
+        float: right;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .form .element .right .guide{
+        height: 102px;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .information .information-header .logo .text {
+      display: none;
+    }
+    .information{
+        padding: 20px;
+    }
+    .information .card{
+        float: none;
+        width: 100%;
+    }
+    .information .card .description{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .testimonial .testimonial-header{
+        padding: 20px;
+    }
+    .testimonial .testimonial-header .logo{
+        display: none;
+    }
+    .testimonial .testimonial-header .logo-alt{
+        display: block;
+    }
+    .testimonial .card{
+        padding: 15px;
+        float: none;
+        width: 100%;
+    }
+    .testimonial .card .description{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .testimonial .more-clients{
+        float: none;
+        padding: 0 15px;
+    }
+    .testimonial .more-clients img{
+        width: 100%;
+    }
+    .testimonial .installation{
+        padding-top: 15px;
+        float: none;
+        width: 100%;
+        background-size: 100% 102%;
+    }
+    .testimonial .installation .details{
+        padding: 105px 0 0 75px;
+    }
+    .testimonial .installation .details .logo{
+        padding: 0 24px 0 0;
+}
+    .footer .footer-element{
+        padding: 30px 25px 20px 25px;
+        text-align: center;
+    }
+  }
