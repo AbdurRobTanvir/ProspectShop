@@ -5,6 +5,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -12,12 +20,8 @@ body{
 }
 /* Header */
 .header{
-    background-image: url(image/header_bg.png);
+    background: url(image/header_bg.png) repeat;
     background-size: 100% 100%;
-}
-.header .header-element{
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .header .header-logo{
     padding-top: 20px;
@@ -29,18 +33,15 @@ body{
     position: relative;
 }
 .header-menu ul {
-    list-style-type: none;
-    margin: 0;
     padding: 55px 0 0 0;
-    overflow: hidden;
 } 
 .header-menu  li {
+    list-style: none;
     float: left;
 }
 .header-menu li a {
     display: block;
-    color: white;
-    text-align: center;
+    color: #ffffff;
     padding: 15px 23px;
     text-decoration: none;
 }
@@ -50,8 +51,9 @@ body{
     top: 0;
     padding: 28px 20px 0 0;
 }
-a[href^="tel:"] {
-    color: black;
+.contact a{
+    display: block;
+    color: #000000;
     font-size: 29px;
     text-decoration: none;
 }
@@ -60,100 +62,89 @@ a[href^="tel:"] {
     display: none;
 }
 /* Header End */
-/* Form */
-.form{
-    background-image: url(image/body_bg.jpg);
-    background-repeat: no-repeat;
+
+/* Banner */
+.banner{
+    background: url(image/body_bg.jpg) no-repeat;
     background-size: 100% 100%;
 }
-.form .left-background{
-    background-image: url(image/body_bg.jpg);
-    background-repeat: no-repeat;
+.banner .headline-background{
+    background: url(image/body_bg.jpg) no-repeat;
     background-size: 0;
 }
-.form .element{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.form .element .left{
+.banner .headline{
     float: left;
     width: 60%;
     position: relative;
 }
-.form .element .left .left-element{
+.banner .headline .headline-element{
     padding: 185px 0 0 0;
-    height: 865px;
+    height: 870px;
 }
-.form .left-element .title{
+.banner .headline-element .title{
     width: 75%;
     font-size: 45px;
     font-weight: bold;
 }
-.form .left-element .details{
+.banner .headline-element .details{
     font-size: 20px;
     position: absolute;
     bottom: 0;
 }
-.form .element .right{
+.banner .form{
     float: right;
     width: 40%;
-    color: white;
-    background-image: url(image/container_bg.png);
-    background-repeat: no-repeat;
+    color: #ffffff;
+    background: url(image/container_bg.png) no-repeat;
     background-size: 100%;
     height: 910px;
 }
-.form .right .element{
+.banner .form .element{
     padding: 50px 50px 0 50px;
 }
-.form .right .element .logo img{
+.banner .form .element .logo-img{
     float: left;
 }
-.form .right .element .logo .name{
+.banner .form .element .logo .name{
     float: right;
     font-size: 30px;
     line-height: 75px;
 }
-.form .right .title{
+.banner .form .title{
     padding: 10px 0 20px 0;
     text-align: center;
 }
-.form .right .box{
+.banner .form .box{
     width: 100%;
     height: 40px;
     margin-bottom: 8px;
 }
-.form .right .guide{
-    background-color: black;
+.banner .form .guide{
+    background-color: #333333;
     width: 100%;
-    height: 110px;
+    padding-bottom: 25px;
     margin: 35px 0 45px 0;
 }
-.form .right .guide .text{
+.banner .form .guide .text{
     float: left;
     font-size: 25px;
     font-weight: bold;
     width: 60%;
     padding: 25px 0 0 30px;
 }
-.form .right .guide .logo{
+.banner .form .guide .logo{
     float: right;
     padding: 30px 50px 0 0;
 }
-.form .right .element .conclusion{
-    width: 100%;
+.banner .form .element .conclusion{
     text-align: center;
 }
-/* Form End */
+/* Banner End */
 
 /* information */
 .information{
     background-color: #5fa32e;
-    color: white;
-}
-.information .element{
-    max-width: 1200px;
-    margin: 0 auto;
+    color: #ffffff;
 }
 .information .information-header{
     padding: 40px 0 20px 0;
@@ -177,20 +168,14 @@ a[href^="tel:"] {
     line-height: 50px;
     height: 50px;
 }
+.information .card-wrapper{
+    margin: 0 -65px;
+}
 .information .card{
-    width: 33%;  
+    width: 33.3333%;  
     float: left;
-    padding-top: 10px;
+    padding: 10px 65px;
     height: 290px;
-}
-.information .card .description-left{
-    padding-right: 75px;
-}
-.information .card .description-mid{
-    padding: 0 50px 0 37px;
-}
-.information .card .description-right{
-    padding-left: 75px;
 }
 .information .card img{
     height: 50px;
@@ -200,18 +185,14 @@ a[href^="tel:"] {
     margin-right: auto;
 }
 .information .card .title{
-    height: 100px;
     text-transform: uppercase;
     font-size: 18px;
     padding-top: 10px;
+    padding-bottom: 40px;
 }
 /* information end */
 
 /* testimonial */
-.testimonial{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 .testimonial .testimonial-header{
     padding: 30px 0 20px 0;
 }
@@ -228,20 +209,14 @@ a[href^="tel:"] {
     float: right;
     display: none;
 }
+.testimonial .card-wrapper{
+    margin: 0 -80px;
+}
 .testimonial .card{
     float: left;
-    width: 33%;
+    width: 33.3333%;
     text-align: center;
-    padding: 15px 0;
-}
-.testimonial .card .description-left{
-    padding-right: 95px;
-}
-.testimonial .card .description-mid{
-    padding: 0 58px;
-}
-.testimonial .card .description-right{
-    padding-left: 90px;
+    padding: 15px 80px;
 }
 .testimonial .card img{
     display: block;
@@ -250,8 +225,8 @@ a[href^="tel:"] {
 }
 .testimonial .card .title{
     padding-top: 30px;
+    padding-bottom: 60px;
     font-weight: bold;
-    height: 150px;
 }
 .testimonial .card .title .company{
     text-transform: uppercase;
@@ -272,34 +247,30 @@ a[href^="tel:"] {
 }
 .testimonial .installation{
     float: right;
-    background-image: url(image/container_bg_alt.png);
-    background-repeat: no-repeat;
-    height: 231px;
+    background: url(image/container_bg_alt.png) no-repeat;
     width: 38%;
 }
 .testimonial .installation .details{
-    width: 330px;
-    padding: 120px 0px 0 96px;
+    padding: 120px 40px 53px 96px;
 }
 .testimonial .installation .details .title{
-    color: white;
+    color: #ffffff;
     float: left;
     font-size: 25px;
     font-weight: bold;
     width: 160px;
 }
 .testimonial .installation .details .logo{
-    float: right;
+    float: left;
+    padding-left: 30px;
 }
 /* testimonial end */
 .footer{
-    background-image: url(image/footer.png);
+    background: url(image/footer.png) repeat;
     background-size: 100% 100%;
 }
 .footer .footer-element{
-    color: white;
-    max-width: 1200px;
-    margin: 0 auto;
+    color: #ffffff;
     padding: 30px 0 20px 0;
 }
 @media screen and (max-width: 576px) {
@@ -320,55 +291,51 @@ a[href^="tel:"] {
         height: 50px;
         width: 50px;
     }
-    .form{
+    .banner{
         background-size: 0;
     }
-    .form .element .left{
+    .banner .headline{
         float: none;
         width: 100%;
     }
-    .form .left-background{
+    .banner .headline-background{
         background-size: 210% 100%;
         background-position-x: -55px;
     
     }
-    .form .element .left .left-element{
+    .banner .headline .headline-element{
         padding: 70px 0 0 30px;
         height: 420px;
     }
-    .form .left-element .title{
+    .banner .headline-element .title{
         width: 100%;
         font-size: 28px;
     }
-    .form .left-element .details{
+    .banner .headline-element .details{
         font-size: 11px;
         bottom: 15px;
     }
-    .form .element .right{
+    .banner .form{
         float: none;
         padding: 0;
         width: 100%;
-        height: 800px;
+        height: 780px;
         background-size: 103% 100%;
         background-position-x: -6px;
     }
-    .form .element .right .element{
+    .banner .form .element{
         padding: 20px 40px 0 40px;
     }
-    .form .element .right .element .logo img{
+    .banner .form .element .logo img{
         height: 50px;
         width: 50px;
-        float: left;
     }
-    .form .element .right .element .logo .name{
-        float: right;
+    .banner .form .element .logo .name{
         font-size: 25px;
         line-height: 50px;
     }
-    .form .element .right .guide{
-        height: 102px;
-        margin-top:10px;
-        margin-bottom: 10px;
+    .banner .form .guide{
+        margin: 10px 0;
     }
     .information .information-header .logo .text {
       display: none;
@@ -376,13 +343,13 @@ a[href^="tel:"] {
     .information{
         padding: 20px;
     }
+    .information .card-wrapper{
+        margin: 0;
+    }
     .information .card{
         float: none;
         width: 100%;
-    }
-    .information .card .description{
-        padding-left: 35px;
-        padding-right: 35px;
+        padding: 10px 47px;
     }
     .testimonial .testimonial-header{
         padding: 20px;
@@ -393,14 +360,13 @@ a[href^="tel:"] {
     .testimonial .testimonial-header .logo-alt{
         display: block;
     }
+    .testimonial .card-wrapper{
+        margin: 0;
+    }
     .testimonial .card{
-        padding: 15px;
+        padding: 15px 50px;
         float: none;
         width: 100%;
-    }
-    .testimonial .card .description{
-        padding-left: 35px;
-        padding-right: 35px;
     }
     .testimonial .more-clients{
         float: none;
@@ -416,11 +382,8 @@ a[href^="tel:"] {
         background-size: 100% 102%;
     }
     .testimonial .installation .details{
-        padding: 105px 0 0 75px;
+        padding: 105px 30px 52px 75px;
     }
-    .testimonial .installation .details .logo{
-        padding: 0 24px 0 0;
-}
     .footer .footer-element{
         padding: 30px 25px 20px 25px;
         text-align: center;
