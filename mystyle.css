@@ -25,8 +25,11 @@ ul{
 }
 .header .header-logo{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     float: left;
+}
+.header .header-logo a{
+    display: block;
 }
 .header .header-menu{
     float: right;
@@ -100,32 +103,40 @@ ul{
     height: 910px;
 }
 .banner .form .element{
-    padding: 50px 50px 0 50px;
+    padding: 50px 70px 0 70px;
 }
 .banner .form .element .logo-img{
     float: left;
+    width: 60px;
+    height: 60px;
 }
 .banner .form .element .logo .name{
     float: right;
     font-size: 30px;
-    line-height: 75px;
+    line-height: 60px;
 }
 .banner .form .title{
     padding: 10px 0 20px 0;
+    color: #c6ddcd;
     text-align: center;
+    font-size: 17px;
 }
 .banner .form .box{
     width: 100%;
-    height: 40px;
-    margin-bottom: 8px;
+    height: 45px;
+    margin: 4px 0 9px 0;
+}
+.banner .form .element a{
+    display: block;
 }
 .banner .form .guide{
     background-color: #333333;
     width: 100%;
     padding-bottom: 25px;
-    margin: 35px 0 45px 0;
+    margin:45px 0;
 }
 .banner .form .guide .text{
+    color: #ffffff;
     float: left;
     font-size: 25px;
     font-weight: bold;
@@ -133,8 +144,9 @@ ul{
     padding: 25px 0 0 30px;
 }
 .banner .form .guide .logo{
+    width: 40%;
     float: right;
-    padding: 30px 50px 0 0;
+    padding: 30px 0 0 40px;
 }
 .banner .form .element .conclusion{
     text-align: center;
@@ -166,7 +178,6 @@ ul{
     float: right;
     font-size: 25px;
     line-height: 50px;
-    height: 50px;
 }
 .information .card-wrapper{
     margin: 0 -65px;
@@ -210,13 +221,13 @@ ul{
     display: none;
 }
 .testimonial .card-wrapper{
-    margin: 0 -80px;
+    margin: 0 -70px;
 }
 .testimonial .card{
     float: left;
     width: 33.3333%;
     text-align: center;
-    padding: 15px 80px;
+    padding: 15px 70px;
 }
 .testimonial .card img{
     display: block;
@@ -285,7 +296,7 @@ ul{
     }
     .header .header-menu-bar{
         display: block;
-        padding: 20px 35px 0 0;
+        padding: 20px 20px 0 0;
     }
     .header .header-menu-bar img{
         height: 50px;
@@ -335,7 +346,7 @@ ul{
         line-height: 50px;
     }
     .banner .form .guide{
-        margin: 10px 0;
+        margin: 8px 0;
     }
     .information .information-header .logo .text {
       display: none;
@@ -349,7 +360,7 @@ ul{
     .information .card{
         float: none;
         width: 100%;
-        padding: 10px 47px;
+        padding: 10px 40px;
     }
     .testimonial .testimonial-header{
         padding: 20px;
